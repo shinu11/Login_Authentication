@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button2
+        {
+          background-color: #008CBA;
+          border: none;
+          color: white;
+          padding: 15px 300px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+          input
+           {
+            display: inline-block;
+            width: 600px;
+            font-size: 20px;
+            border: 2px solid blue;
+            background-color: #3CBC8D;
+          }
+          label
+          {
+           display: inline-block;
+           font-size: 20px;
+         }
+          
+    </style>      
+</head>
+<body style='background-color:#20c997;'>
+
+    <h1>SIGNIN</h1>
+   
+    <form action="/signin" method="post">
+    {% csrf_token %}
+        <label for="">UserName:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Username"Required><br><br>
+
+        <label for="">Password:</label>
+            <input type="password" id="p1" name="p1" placeholder="Enter your password"Required><br><br>
+
+        <button class="button2" type="submit" >SignIn</button>   
+    </form>        
+
+
+
+</body>
+</html>
