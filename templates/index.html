@@ -48,10 +48,12 @@
     </div>    
     {% endfor %}
 
-    <h1>LOGIN</h1>
+   
     
     {% if user.is_authenticated %}
     
+    <h1>WELCOME TO {{ fname }}'s WORLD</h1>
+
     <h3>Hello {{ fname }} </h3>
     <h4>You are Succesfully Logged In</h4>
     <button class="button3",type='submit'><a href='/signout'>SignOut </a></button>
